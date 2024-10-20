@@ -1,0 +1,66 @@
+*html{
+
+    
+}
+
+body{
+    background-color: lightgrey;
+    overflow-y: hidden;
+
+}
+@font-face {
+    font-family: frieren;
+    src: url(font/Tolkien.ttf);
+}
+
+.navbar{
+    background-color: azure;
+    box-shadow: 0 7px 15px 0 lightblue;
+    border-radius: 10px;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 50rem;
+    
+}
+.isi{
+    position: relative;
+    bottom: 36rem;
+    background-color: rgba(250, 235, 215, 0.486);
+    margin-right: 850px;
+    border-radius: 10px;
+    margin-left: 40px;
+    
+}
+.isi p{
+    font-size: 40px;
+
+    font-family: frieren;
+}
+.bckvid video {
+    max-width: 100%;
+}
+.container{ 
+    
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.navbar li{
+    border-radius: px;
+    list-style-type: none;
+    padding: 2rem;
+    font-family: frieren;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    background-color: rgba(135, 207, 235, 0.158) ;
+    border-radius: 15px;
+    color: blueviolet;
+    text-shadow: 0 7px 15px 0 purple;
+}
