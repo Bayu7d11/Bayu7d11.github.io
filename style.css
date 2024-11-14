@@ -1,66 +1,97 @@
-*html{
 
-    
-}
-
-body{
-    background-color: lightgrey;
-    overflow-y: hidden;
-
-}
-@font-face {
-    font-family: frieren;
-    src: url(font/Tolkien.ttf);
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-.navbar{
-    background-color: azure;
-    box-shadow: 0 7px 15px 0 lightblue;
-    border-radius: 10px;
-    font-size: 1.5em;
-    position: relative;
-    bottom: 50rem;
-    
+a {
+    color: white;
 }
-.isi{
-    position: relative;
-    bottom: 36rem;
-    background-color: rgba(250, 235, 215, 0.486);
-    margin-right: 850px;
-    border-radius: 10px;
-    margin-left: 40px;
-    
+a:visited {
+    color: white;
 }
-.isi p{
-    font-size: 40px;
+a:hover {
+    color: #1f94a3;
+}
 
-    font-family: frieren;
-}
-.bckvid video {
-    max-width: 100%;
-}
-.container{ 
-    
+body {
+    background-color: rgb(241, 243, 252);
+    font-family: sans-serif;
 }
 
 
-.navbar ul{
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color:  rgb(74, 78, 95);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
     display: flex;
+    flex-direction: column;
+    align-items: center;    
     justify-content: center;
-    align-items: center;   
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active {
+    right: 0;
 }
 
-.navbar li{
-    border-radius: px;
-    list-style-type: none;
-    padding: 2rem;
-    font-family: frieren;
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgba(15, 239, 255, 0.63);
 }
 
-.navbar li:hover{
-    cursor: pointer;
-    background-color: rgba(135, 207, 235, 0.158) ;
-    border-radius: 15px;
-    color: blueviolet;
-    text-shadow: 0 7px 15px 0 purple;
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
