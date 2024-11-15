@@ -31,6 +31,8 @@ a:visited {
 }
 a:hover {
     color: #1f94a3;
+    font-size: 60px;
+    transition: .4s;
 }
 
 body {
@@ -49,7 +51,7 @@ body {
     height: 100vh;
     width: 100%;
     max-width: 450px;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -450px;
     display: flex;
@@ -89,6 +91,7 @@ nav img:hover{
     height: 80px;
     border-radius: 65px;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 
