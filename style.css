@@ -74,8 +74,21 @@ nav {
     display: flex;
     background-color: Azure;
     box-shadow: purple 0px 5px 15px 0px;
-    
+}
 
+nav img{
+    top: 0px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+nav img:hover{
+    width: 80px;
+    height: 80px;
+    border-radius: 65px;
+    transition: all .3s ease-in-out;
 }
 
 
