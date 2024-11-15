@@ -12,8 +12,19 @@
     src: url(font/Tolkien.ttf);
 }
 
+@font-face {
+    font-family: main;
+    src: url(font/main-font.ttf);
+}
+
+@font-face {
+    font-family: main-bold;
+    src: url(font/main-font-bold.ttf);
+}
+
 a {
     color: white;
+    text-shadow: black 2px 3px 4px;
 }
 a:visited {
     color: white;
@@ -62,7 +73,8 @@ nav {
     padding: 1rem;
     display: flex;
     background-color: Azure;
-    box-shadow: rgba(137, 43, 226, 0.329) 0px 5px 15px 0px;
+    box-shadow: purple 0px 5px 15px 0px;
+    
 
 }
 
@@ -105,4 +117,8 @@ nav {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+p, h1,h2{
+    font-family: main-bold;
 }
