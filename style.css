@@ -38,6 +38,7 @@ a:hover {
 body {
     background-color: #C6E7FF;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 
