@@ -1,153 +1,58 @@
-
-/* base styles */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+}
+body{
+    overflow-y: hidden;
 }
 @font-face {
-    font-family: frieren;
-    src: url(font/Tolkien.ttf);
+    font-family: jjk-font;
+    src: url(font/Jujutsu\ Kaisen.ttf);
 }
 
-@font-face {
-    font-family: main;
-    src: url(font/main-font.ttf);
-}
-
-@font-face {
-    font-family: main-bold;
-    src: url(font/main-font-bold.ttf);
-}
-
-a {
-    color: white;
-    text-shadow: black 2px 3px 4px;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: #1f94a3;
-    font-size: 60px;
-    transition: .4s;
-}
-
-body {
-    background-color: #C6E7FF;
-    font-family: sans-serif;
-    overflow-x: hidden;
-}
-
-
-
-/* off-screen-menu */
-.off-screen-menu {
-    background-image: url(/IMG/Bck/bck-hamber.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: #000000 7px 5px 6px 8px;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: absolute;
-    top: 0;
-    right: -450px;
+.slider-container .slider-konten{
     display: flex;
-    flex-direction: column;
-    align-items: center;    
     justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-    font-family: frieren;
-    color: azure;
-}
-.off-screen-menu.active {
-    right: 0;
+    align-items: center;
+    color: aquamarine;
+    font-family: jjk-font;
 }
 
-
-
-/* nav */
-nav {
-    padding: 1rem;
-    display: flex;
-    background-color: Azure;
-    box-shadow: purple 0px 5px 15px 0px;
-}
-
-nav img{
-    top: 0px;
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-}
-
-nav img:hover{
-    width: 80px;
-    height: 80px;
-    border-radius: 65px;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
-
-
-
-/* ham menu */
-.ham-menu {
-    height: 50px;
-    width: 40px;
-    margin-left: auto;
-    position: relative;
-}
-.ham-menu span {
-    height: 5px;
+.slider-container .slider-konten::before {
+    content: '';
     width: 100%;
-    background-color: #000000;
-    border-radius: 25px;
+    height: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
-.ham-menu span:nth-child(1) {
-    top: 25%;
-}
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-.ham-menu.active span {
-    background-color: white;
-}
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    background-image: linear-gradient(to top, black, transparent);
 }
 
-p, h1,h2{
-    font-family: main-bold;
+.slider-container .slider-konten img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-*{box-sizing: border-box;}
-
-.container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+.slider-isi .judul {
+    font-size: 6rem;
+    color: black;
+    text-shadow: rgb(255, 255, 255) 1px 0px 2px;
 }
 
-.slide {
-    display: none;
+.slider-konten .slider-isi{
+    position: absolute;
+    text-align: center;
+}
+
+.slider-konten .slider-isi {
+    margin-bottom: 20px;
+}
+
+.slider-isi .isi {
+    width: 100ch;
+    
+}
+
+.slider-isi .tombol {
+    color: azure;
 }
