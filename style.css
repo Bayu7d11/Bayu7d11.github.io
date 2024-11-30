@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     font-family: jjk-font;
 }
 
